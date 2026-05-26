@@ -1,8 +1,9 @@
 # skills
 
-Personal collection of [Claude Code](https://docs.claude.com/en/docs/claude-code/overview)
-skills. Each skill lives in its own top-level folder with a `SKILL.md` and
-optional `references/`, `scripts/`, and `evals/`.
+Personal collection of agent skills. Each skill follows the open Agent Skills
+format: a folder containing a `SKILL.md` (markdown with YAML frontmatter) plus
+optional `references/`, `scripts/`, and `evals/`. The format is portable across
+any agent runtime that supports it.
 
 ## Skills
 
@@ -12,16 +13,12 @@ optional `references/`, `scripts/`, and `evals/`.
 
 ## Installing a skill
 
-Copy the skill folder into your Claude Code skills directory:
+Copy the skill folder into the directory your agent runtime loads skills from.
+The exact path depends on your runtime - consult its docs. As a concrete
+example, one common location is:
 
 ```bash
 cp -R <skill-name> ~/.claude/skills/
-```
-
-Claude Code picks it up automatically on the next session. Verify with:
-
-```bash
-ls ~/.claude/skills/
 ```
 
 ## Skill layout
@@ -31,11 +28,8 @@ ls ~/.claude/skills/
   SKILL.md              # required: frontmatter + instructions
   references/           # optional: extended docs loaded as needed
   scripts/              # optional: executable helpers the skill calls
-  evals/                # optional: test prompts for the skill-creator loop
+  evals/                # optional: test prompts and assertions
 ```
-
-See the [Anthropic skills documentation](https://docs.claude.com/en/docs/claude-code/skills)
-for the full format.
 
 ## License
 
