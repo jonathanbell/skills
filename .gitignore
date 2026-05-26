@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Skill-creator workspaces (test artefacts, not part of the skill)
+*-workspace/
+
+# Local Claude Code state
+.claude/

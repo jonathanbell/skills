@@ -1,0 +1,23 @@
+{
+  "skill_name": "lighthouse-weather-report",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "lighthouse weather report",
+      "expected_output": "A combined markdown report covering all 14 mapped stations across the three regions, each with the all-caps KEY, the general location, a plain-language summary, and the raw code line.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "what's the weather doing at the BC coast lighthouses today?",
+      "expected_output": "The full combined report - all 14 stations, three regions, KEY + general location headings, plain-language decoding, raw code lines.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "can you give me a rundown of the lightstation conditions up around Port Hardy and Cape Scott?",
+      "expected_output": "A report focused on the Vancouver Island North stations (Cape Scott, Scarlett, Quatsino, Pulteney, Chatham, Cape Mudge), decoded into plain language with KEY + general location headings.",
+      "files": []
+    }
+  ]
+}
